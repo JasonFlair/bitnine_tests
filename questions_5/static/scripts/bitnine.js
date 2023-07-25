@@ -38,7 +38,7 @@ $(document).ready(function(){
 $('form#submit_button').submit(function(event) {
   // handles logging in
   event.preventDefault();
-  const loginUrl = 'http://127.0.0.1:3000/api/v1/';
+  const loginUrl = 'http://127.0.0.1:3000/api/v1/login';
   let email = $('#user_email').val();
   let password = $('#user_password').val();
   query_data['email'] = email;
