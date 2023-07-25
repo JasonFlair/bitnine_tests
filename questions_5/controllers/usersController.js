@@ -26,7 +26,6 @@ class UsersController {
       return response.status(500).json({error: 'no name sent'});
     }
     const hashedPassword = hashPassword(password);
-    console.log(hashedPassword);
     const newUser = new User({
       name,
       email,
