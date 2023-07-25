@@ -1,6 +1,5 @@
 // this file contains functions for User endpoints operations
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 
 // hashes user's password.
@@ -35,6 +34,7 @@ class UsersController {
     });
     try {
       const createdUser = await newUser.save();
+      console.log(createdUser);
       return response.status(201).json(createdUser);
     } catch (error) {
       if (error.code === 11000) {
