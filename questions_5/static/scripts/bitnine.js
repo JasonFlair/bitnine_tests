@@ -36,6 +36,7 @@ $(document).ready(function(){
     });
 });
 $('form#submit_button').submit(function(event) {
+  console.log('logging in...')
   // handles logging in
   event.preventDefault();
   const loginUrl = 'http://127.0.0.1:3000/api/v1/login';
@@ -50,6 +51,7 @@ $('form#submit_button').submit(function(event) {
       contentType: 'application/json',
       data: JSON.stringify(query_data),
       success: function(response) {
+        console.log('success ooo')
         window.location = './bitnineclone.html' 
       },
 
