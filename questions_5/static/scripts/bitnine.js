@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('form#signup_button').submit(function(event) {
     // handes user registration.
     event.preventDefault();
-    const signUpUrl = 'http://localhost:3000/api/v1/register_user';
+    const signUpUrl = 'http://127.0.0.1:3000/api/v1/register_user';
     let email = $('#user_email').val();
     let password = $('#user_password').val();
     let name = $('#user_name').val();
@@ -38,7 +38,7 @@ $(document).ready(function(){
 $('form#submit_button').submit(function(event) {
   // handles logging in
   event.preventDefault();
-  const loginUrl = 'http://localhost:3000/api/v1/';
+  const loginUrl = 'http://127.0.0.1:3000/api/v1/';
   let email = $('#user_email').val();
   let password = $('#user_password').val();
   query_data['email'] = email;
