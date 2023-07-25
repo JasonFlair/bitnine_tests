@@ -1,0 +1,113 @@
+main {
+  width: 100%;
+  font-family: 'Monda','Noto Sans KR', sans-serif;
+  margin-top: 50px;
+}
+
+section {
+  margin-top: 70px;
+}
+
+
+.agens_enterprise_package, .key_features, .agensql_text h3 {
+  text-align: center;
+}
+
+.agensql{
+  justify-content: center; 
+}
+.agensql_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.agensql_text {
+  margin-bottom: 100px;
+}
+
+p {
+  color: #666666;
+  display: block;
+}
+.agensql_text p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  padding: 0px 320px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font: 16px;
+}
+.agens_enterprise_package_pic {
+  display: flex;
+  justify-content: center;
+}
+
+.agens_enterprise_package p {
+  margin: 0px 0px 10px;
+  text-align: center;
+}
+.agens_ha_manager_pic {
+  width: 500px;
+  height: 400px;
+}
+
+.key_features {
+  background-color: #F3F6FB;
+  padding: 30px;
+}
+.call_to_actions_buttons {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-right: 30px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a button:hover {
+  color: gold;
+  background-color: rgb(20, 20, 146);
+  transition: all 0.2s ease-out;
+
+}
+
+.bitnine_form {
+  display: flex;
+  justify-content: center;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form #user_email, #user_password, #user_name, #confirm_password {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  box-shadow: 2px 2px 4px 3px grey;
+}
+
+form #submit_button, #signup_button {
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

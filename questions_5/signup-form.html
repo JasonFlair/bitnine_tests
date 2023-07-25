@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- html file for the flair vibes tailor web app -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="Bitnine Test Signup form.">
+        <meta name="keywords" content="coding test, authentication">
+        <title>Bitnine Test Signup</title>
+        <link rel="stylesheet" type="text/css" href="./static/styles/common.css" />
+        <link rel="stylesheet" type="text/css" href="./static/styles/header.css" />
+        <link rel="stylesheet" type="text/css" href="./static/styles/footer.css" />
+        <LINK rel="icon" href="./static/images/b_logo.png">
+    </head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./static/scripts/fvtailor.js"></script>
+    <script>
+      function validateForm() {
+        const password = document.getElementById("user_password").value;
+        const confirmPassword = document.getElementById("confirm_password").value;
+    
+        if (password !== confirmPassword) {
+          alert("Passwords do not match!");
+          return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+      }
+    </script>
+    <body>
+        <header>
+          <div class="logo">
+            <img class="bitnine_logo" src="./static/images/b_logo.png"> 
+          </div>
+        </header>
+        <main class="container">
+            <!-- main body -->
+            <section class="welcome">
+                <!-- includes a welcome text -->
+                <h2>Join us now at Bitnine Technologies!</h2>
+            </section>
+            <section class="bitnine_form">
+                <div>
+                  <form id="submit_signup" onsubmit="return validateForm()">
+                    <p>Let's get you signed up.</p>
+                    <input type="text" id="user_name" name="user_name" placeholder="Your Name"><br>
+                    <input type="text" id="user_email" name="user_email" placeholder="Email Address"><br>
+                    <input type="password" id="user_password" name="user_password" placeholder="Password"><br>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"><br>
+                    <input type="submit" value="Sign me up!" id="signup_button">
+                    <p>Already have an account? <a href="./login-form.html">Log in</a></p>
+                  </form>
+
+                </div>
+            </section>
+            <section class="recommendations">
+                <!--field for the recommendations which will be rendered by jQuery -->
+            </section>
+          </main>
+        <footer>
+            <p>Written by Chukwuemelie Obumse, GitHub - <a href="https://github.com/jasonflair">My GitHub</a></p>
+        </footer>
+    </body>
+</html>

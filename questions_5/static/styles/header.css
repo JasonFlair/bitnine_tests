@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: row;
+  font-family: Monda,'Noto Sans KR', sans-serif;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 350px;
+}
+li a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: gold;
+  transition: all 0.3s ease-in-out;
+}
+.bitnine_logo {
+  width: 230px;
+  height: 60px;
+  margin-left: 20px;
+}
