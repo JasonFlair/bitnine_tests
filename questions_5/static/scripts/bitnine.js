@@ -1,12 +1,13 @@
 $(document).ready(function(){
   const signUpUrl = 'http://127.0.0.1:3000/api/v1/register_user';
   const loginUrl = 'http://127.0.0.1:3000/api/v1/login';
-  $('form#signup_button').submit(function(event) {
+  $('#signup_button').submit(function(event) {
     // handes user registration.
     event.preventDefault();
     let email = $('#user_email').val();
     let password = $('#user_password').val();
     let name = $('#user_name').val();
+    let query_data = {};
     query_data['name'] = name;
     query_data['email'] = email;
     query_data['password'] = password;
@@ -36,12 +37,13 @@ $(document).ready(function(){
         }
     });
 });
-$('form#submit_button').submit(function(event) {
+$('#submit_button').submit(function(event) {
   console.log('logging in...')
   // handles logging in
   event.preventDefault();
   let email = $('#user_email').val();
   let password = $('#user_password').val();
+  let query_data = {};
   query_data['email'] = email;
   query_data['password'] = password;
 
