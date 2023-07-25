@@ -33,7 +33,6 @@ class UsersController {
     });
     try {
       const createdUser = await newUser.save();
-      console.log(createdUser);
       return response.status(201).json(createdUser);
     } catch (error) {
       if (error.code === 11000) {
