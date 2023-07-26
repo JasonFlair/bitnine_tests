@@ -1,3 +1,5 @@
+// This file contains the solution to the question 6-1 coding test.
+
 // Function that will take input from the user and check if it is palindrome
 // if the word is not palindrome then return it in the reverse order. 
 // For example "hello" is not a palindrome, it should return "olleh“

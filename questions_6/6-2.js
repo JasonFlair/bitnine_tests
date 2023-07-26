@@ -1,3 +1,5 @@
+// This file contains the solution to the question 6-2 coding test.
+
 // Let's say we have an array of first 45 numbers with one missing number,
 // this function finds the missing integer from the list.
 function findMissingNumber(arr) {
