@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: row;
   font-family: Monda,'Noto Sans KR', sans-serif;
+  border-bottom: 1px #e6e4e4 solid;
 }
 ul {
   display: flex;
